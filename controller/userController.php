@@ -39,9 +39,9 @@
                   break;
                }
                
-               case 'how':
+               case 'myprofile':
                {
-                  $this->setHow($view);   
+                  $this->setMyprofile($view);   
                   break;
                }
                
@@ -154,23 +154,23 @@
             require_once($view->getEndPage());
         }
         
-//        public function setHow($view)
-//        {
-//            $view->setStartPage('./view/guest/startPage.php');
-//            require_once($view->getStartPage());
-//            $view->setHeader('./view/guest/header.php');
-//            require_once($view->getHeader());
-//            $view->setContent('./view/guest/how.php');
-//            require_once($view->getContent());
-//            $view->setSideBar('./view/guest/sidebar.php');
-//            require_once($view->getSideBar());
-//            $view->setSideFull('./view/guest/sidefull.php');
-//            require_once($view->getSideFull());
-//            $view->setFooter('./view/guest/footer.php');
-//            require_once($view->getFooter());
-//            $view->setEndPage('./view/guest/endPage.php');
-//            require_once($view->getEndPage());
-//        }
+        public function setMyprofile($view)
+        {
+            $view->setStartPage('./view/guest/startPage.php');
+            require_once($view->getStartPage());
+            $view->setHeader('./view/guest/header.php');
+            require_once($view->getHeader());
+            $view->setContent('./view/guest/myprofile.php');
+            require_once($view->getContent());
+            $view->setSideBar('./view/guest/sidebar.php');
+            require_once($view->getSideBar());
+            $view->setSideFull('./view/guest/sidefull.php');
+            require_once($view->getSideFull());
+            $view->setFooter('./view/guest/footer.php');
+            require_once($view->getFooter());
+            $view->setEndPage('./view/guest/endPage.php');
+            require_once($view->getEndPage());
+       }
         
         public function setStore($view)
         {
