@@ -34,6 +34,13 @@ class database
         else
             return $mysqli;
     }
+    public static function chiudiDB()
+{
+if(self::$_instance != null)
+{
+self::$_instance->close();
+}
+}
 }
 
 ?>
