@@ -9,12 +9,48 @@ include_once './model/userDB.php';
 			<div class="clear"></div>
                         <h2>Il tuo profilo</h2> 
 <?php 
-$username= $_SESSION['username'];
-$password= $_SESSION['password'];
-$exist = userDB::instance()->existUser($_POST['username'], $_POST['password']);
-if($exist)
-            {
-    while($row= $result->fetch_row())
+$mysqli = database::getInstance()->databaseConnection();
+        
+        if (!isset($mysqli)) 
+        {
+            $mysqli->close();
+            return false;
+        }
+        
+        $stmt = $mysqli->stmt_init();
+        $username= $_SESSION['username']; 
+        $query = "SELECT email, name, surname, street, number, city, state FROM user WHERE username= '$username'";;
+        
+        $stmt->prepare($query);
+        
+        if (!$stmt){ 
+            return false;
+        }
+        
+        if(!$stmt->execute())
+        {
+            $stmt->close();
+            $mysqli->close();
+            return false;
+        }
+        
+        $result = array();
+        $bind = $stmt->bind_result(
+                $result['ID'],  
+                $result['email'],
+                $result['username'],
+                $result['password'],
+                $result['name'],
+                $result['surname'],
+                $result['street'],
+                $result['number'],
+                $result['city'],
+                $result['postalCode'],
+                $result['state']);
+    
+       if (!$bind)
+           return false;
+       while($row= $result->fetch_row())
 {
 $email=$row[0];
 $name=$row[1];
@@ -24,9 +60,18 @@ $number=$row[4];
 $city=$row[5];
 $state=$row[6];
 }
-}
-            
+       
+        if (!$stmt->fetch()) 
+        {
+            $stmt->close();
+            $mysqli->close();
             return false;
+        }
+
+        $stmt->close();
+        $mysqli->close();
+        
+        return true;
 ?>
 <p>Nome: <?php echo $name." ".$surname ?> </p>
 <p>Email: <?php echo $email; ?></p>
