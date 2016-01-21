@@ -1,9 +1,10 @@
+include_once './model/user.php';
+include_once './model/database.php';
+
 <div class="main">
   <div id="featured_slide_">
         <ul id="content">
             <div id="pageContentCenter">
-                <form>
-                    <div id="add_err_registration"></div>
 			<div class="clear"></div>
                         <h2>Il tuo profilo</h2> 
                             <?php $username = $_SESSION['username'];
@@ -24,7 +25,7 @@ $result = $db->query($query);
         shopamm::chiudiDB();
     }
 } ?> 
-<p>Nome: <?php echo $name . " " . $surname ?> </p> 
+<p>Nome:  <?php $user->getName() ?>
 <p>Email: <?php echo $email; ?></p> 
 <p>Indirizzo: <?php echo $street . " " . $number . ", " . $city . ", " . $state; ?></p>
                 </form>         
