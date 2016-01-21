@@ -9,7 +9,7 @@ include_once './model/database.php';
                         <h2>Il tuo profilo</h2> 
 <?php 
 $username= $_SESSION['username'];
-$db= database::instance();
+$db= database::getInstance();
 $query= "SELECT email, name, surname, street, number, city, state FROM user WHERE username= '$username'";
 $result= $db->query($query);
 if($db->errno >0){
