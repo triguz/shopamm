@@ -9,8 +9,10 @@ include_once './model/userDB.php';
 			<div class="clear"></div>
                         <h2>Il tuo profilo</h2> 
 <?php 
-userDB::instance()->existUser($_POST['username'], $_POST['password']);
-while($row= $result->fetch_row())
+$exist = userDB::instance()->existUser($_POST['username'], $_POST['password']);
+if($exist)
+            {
+    while($row= $result->fetch_row())
 {
 $email=$row[0];
 $name=$row[1];
@@ -20,6 +22,9 @@ $number=$row[4];
 $city=$row[5];
 $state=$row[6];
 }
+}
+            
+            return false;
 ?>
 <p>Nome: <?php echo $name." ".$surname ?> </p>
 <p>Email: <?php echo $email; ?></p>
