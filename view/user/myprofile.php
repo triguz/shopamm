@@ -11,10 +11,18 @@ include_once './model/database.php';
 $username= $_SESSION['username'];
 $db= database::getInstance();
 $query= "SELECT email, name, surname, street, number, city, state FROM user WHERE username= '$username'";
-$result= $db->query($query);
-if($db->errno >0){
-echo "Errore nell'esecuzione della query $db->errno : $db->error",0;
-}
+$stmt->prepare($query);
+        
+        if (!$stmt){ 
+            return false;
+        }
+        
+        if(!$stmt->execute())
+        {
+            $stmt->close();
+            $mysqli->close();
+            return false;
+        }
 else{
 while($row= $result->fetch_row())
 {
