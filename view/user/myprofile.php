@@ -1,5 +1,6 @@
 <?php
 include_once './model/database.php';
+include_once './model/userDB.php';
 ?>
 <div class="main">
   <div id="featured_slide_">
