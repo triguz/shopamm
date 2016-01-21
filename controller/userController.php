@@ -156,19 +156,19 @@
         
         public function setMyprofile($view)
         {
-            $view->setStartPage('./view/guest/startPage.php');
+            $view->setStartPage('./view/user/startPage.php');
             require_once($view->getStartPage());
-            $view->setHeader('./view/guest/header.php');
+            $view->setHeader('./view/user/header.php');
             require_once($view->getHeader());
-            $view->setContent('./view/guest/myprofile.php');
+            $view->setContent('./view/user/myprofile.php');
             require_once($view->getContent());
-            $view->setSideBar('./view/guest/sidebar.php');
+            $view->setSideBar('./view/user/sidebar.php');
             require_once($view->getSideBar());
-            $view->setSideFull('./view/guest/sidefull.php');
+            $view->setSideFull('./view/user/sidefull.php');
             require_once($view->getSideFull());
-            $view->setFooter('./view/guest/footer.php');
+            $view->setFooter('./view/user/footer.php');
             require_once($view->getFooter());
-            $view->setEndPage('./view/guest/endPage.php');
+            $view->setEndPage('./view/user/endPage.php');
             require_once($view->getEndPage());
        }
         
