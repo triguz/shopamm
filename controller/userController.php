@@ -160,7 +160,7 @@
             require_once($view->getStartPage());
             $view->setHeader('./view/user/header.php');
             require_once($view->getHeader());
-            $view->setContent('./view/user/thestore.php');
+            $view->setContent('./view/user/myprofile.php');
             require_once($view->getContent());
             $view->setSideBar('./view/user/sidebar.php');
             require_once($view->getSideBar());

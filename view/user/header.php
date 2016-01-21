@@ -10,7 +10,7 @@
     <div id="navigation">
         <ul>
             <li <?php echo ((isset($_GET['page']) && $_GET['page'] == 'home') || empty($_GET)) ? 'class="active"' : false; ?>><a href="./index.php?page=home">Home</a></li>
-            <li <?php echo (isset($_GET['page']) && $_GET['page'] == 'myprofile') ? 'class="active"' : false; ?>><a href="./index.php?page=signup">Il mio profilo</a></li>
+            <li <?php echo (isset($_GET['page']) && $_GET['page'] == 'myprofile') ? 'class="active"' : false; ?>><a href="./index.php?page=myprofile">Il mio profilo</a></li>
             <li <?php echo (isset($_GET['page']) && $_GET['page'] == 'thestore') ? 'class="active"' : false; ?>><a href="./index.php?page=thestore">The store</a></li>
             <li <?php echo (isset($_GET['page']) && $_GET['page'] == 'contact') ? 'class="active"' : false; ?>><a href="./index.php?page=contact">Contact</a></li>
         </ul>
