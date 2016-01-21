@@ -36,16 +36,13 @@ $mysqli = database::getInstance()->databaseConnection();
         
         $result = array();
         $bind = $stmt->bind_result(
-                $result['ID'],  
+                  
                 $result['email'],
-                $result['username'],
-                $result['password'],
                 $result['name'],
-                $result['surname'],
+                $result['username'],
                 $result['street'],
                 $result['number'],
                 $result['city'],
-                $result['postalCode'],
                 $result['state']);
     
        if (!$bind)
