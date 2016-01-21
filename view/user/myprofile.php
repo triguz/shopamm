@@ -47,7 +47,7 @@ $mysqli = database::getInstance()->databaseConnection();
     
        if (!$bind)
            return false;
-       while($row= $result->fetch_row())
+       while($row = $result->fetch_row())
 {
 $email=$row[0];
 $name=$row[1];
