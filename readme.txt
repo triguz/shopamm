@@ -1,7 +1,7 @@
 Link sito: http://spano.sc.unica.it/amm2014/boniniAlessandro/index.php?page=home
 
 Salve professore, spero possa accedere correttamente al sito e al db. Dovrei aver rispettato quasi tutti i requisiti.
-Il sito non è nient'altro che un ecommerce di materiale scacchistico. Purtroppo non ho fatto a tempo ad effettuare
+Il sito non è nient'altro che un ecommerce di materiale fotografico. Purtroppo non ho fatto a tempo ad effettuare
 la parte in cui l'utente compra un oggetto dal sito.
 
 Requisiti soddisfatti:
