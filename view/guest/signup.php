@@ -6,12 +6,13 @@
                     <div id="add_err_registration"></div>
                     <div class="clear"></div>
                     <ul>
+                        <p></p>
                     <li><label>Email:</label></li> 
                     <li><input type="text" id="email" name="email" value="" /></li>
-                    <div class="cl">&nbsp;</div>
+                    <p></p>
                     <li><label>Username:</label></li>
                     <li><input type="text" id="r_username" name="username" value="" /></li>
-                    <div class="cl">&nbsp;</div>
+                    <p></p>
                     <li><label>Password:</label></li>
                     <li><input type="password" id="r_password" name="password" value="" /></li>
                     <div class="clear"></div>
