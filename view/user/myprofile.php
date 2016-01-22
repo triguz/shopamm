@@ -20,13 +20,14 @@ $res = $mysqli->query($sql) or trigger_error($mysqli->error."[$sql]");
 while($row = $res->fetch_assoc()) {
     $arrChartData[] = $row;
 }
-$name=$arrChartData[4];
+$name=$arrChartData[1];
+/*$name=$arrChartData[4];
 $surname=$arrChartData[5];
 $email=$arrChartData[1];
 $street=$arrChartData[6];
 $number=$arrChartData[7];
 $city=$arrChartData[8];
-$state=$arrChartData[10];
+$state=$arrChartData[10];*/
         $mysqli->close();
         
         return true;
