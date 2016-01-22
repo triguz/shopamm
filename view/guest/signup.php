@@ -4,7 +4,7 @@
             <div id="pageContentCenter">
                 <form action="index.php?action=signup" method="post">
                     <div id="add_err_registration"></div>
-                    <div class="clear"></div>
+                    
                     <label>Email:</label>
                     <input type="text" id="email" name="email" value="" />
                     <div class="clear"></div>
