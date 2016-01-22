@@ -18,11 +18,12 @@
         <script src="js/jquery-func.js" type="text/javascript"></script>
         <script src="js/signup.js" type="text/javascript"></script>
         <script src="./js/login.js" type="text/javascript"></script>
-
+        <script src="./js/signup.js" type="text/javascript"></script>
+        
         <meta name= "Alessandro Bonini" content="PROGETTO AMM2k14" />
         <meta charset="utf-8" />
     </head>
-
+        
     <body>
         <!-- Shell -->
-<div class="shell">
+        <div class="shell">

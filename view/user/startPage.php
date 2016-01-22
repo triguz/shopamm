@@ -17,6 +17,7 @@
         <script src="js/jquery.jcarousel.pack.js" type="text/javascript"></script>
         <script src="js/jquery-func.js" type="text/javascript"></script>
         <script src="js/login.js"></script>
+        <script src="js/signup.js"></script>
 
         <meta name= "Alessandro Bonini" content="PROGETTO AMM2k14" />
         <meta charset="utf-8" />
@@ -24,4 +25,4 @@
 
     <body>
         <!-- Shell -->
-<div class="shell">
+        <div class="shell">

@@ -3,9 +3,9 @@
     <!-- Login -->
     <div class="box login">
         <h2> Login <span></span></h2>
-        
+
         <div class="box-content">
-        <center>Sei loggato come: <?php echo (isset($_SESSION['username']) ? ($_SESSION['username']) : false) ?></center>
+            <center>Sei loggato come: <?php echo (isset($_SESSION['username']) ? ($_SESSION['username']) : false) ?></center>
             <form>
                 <center><a href="./index.php?page=logout">Logout</a></center>
         </div>

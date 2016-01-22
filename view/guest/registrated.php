@@ -3,7 +3,7 @@
         <div id="pageContentCenter">
             <div id="text">
                 Ora sei registrato. 
-                  Effettua il login.
+                Effettua il login.
             </div>
         </div>
     </ul>

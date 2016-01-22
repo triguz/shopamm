@@ -1,7 +1,7 @@
 <?php
 
 error_reporting(E_ALL);
-ini_set('display_errors',1);
+ini_set('display_errors', 1);
 
 @ob_start();
 
@@ -53,15 +53,12 @@ class Page {
                     $result = $userController->login();
                     //AL POSTO DI ECHO
                     //echo $result;
-                    if($result==1)
-                        {
-                         $userController->handler('home');   
-                        }
-                        else
-                        {
-                         $controller = new guestController();
-                         $controller->handler('loginError'); 
-                        }
+                    if ($result == 1) {
+                        $userController->handler('home');
+                    } else {
+                        $controller = new guestController();
+                        $controller->handler('loginError');
+                    }
                 } else if ($page['action'] == "signup") {
                     $userController = new userController();
                     $result = $userController->signUp();
@@ -73,7 +70,7 @@ class Page {
 
     // Controls if the user is logged in
     static function isLogged() {
-       if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == true)
+        if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] == true)
             return true;
         return false;
     }
