@@ -21,9 +21,19 @@ $res = $mysqli->query($sql) or trigger_error($mysqli->error."[$sql]");
 while($row = $res->fetch_assoc()) {
     $arrChartData[] = $row;
 }
-$name=$arrChartData[0];
+ while($col= $row->fetch_row())
+{
+$email=$col[0];
+$name=$col[1];
+$surname=$col[2];
+$street=$col[3];
+$number=$col[4];
+$city=$col[5];
+$state=$col[6];
+}
+/*$name=$arrChartData[0];
 $surname=$arrChartData[1];
-/*$name=$arrChartData[4];
+$name=$arrChartData[4];
 $surname=$arrChartData[5];
 $email=$arrChartData[1];
 $street=$arrChartData[6];
