@@ -16,7 +16,7 @@
                 <div class="products">
                     <div class="cl">&nbsp;</div>
                     <ul>
-                        <li> <a href="#"><img src="css/images/big1.jpg" alt="" /></a>
+                        <li> <a href="#"><img src="css/images/big3.jpg" alt="" /></a>
                             <div class="product-info">
                                 <h3>LOREM IPSUM</h3>
                                 <div class="product-desc">
@@ -36,7 +36,7 @@
                                     <strong class="price">$58.99</strong> </div>
                             </div>
                         </li>
-                        <li class="last"> <a href="#"><img src="css/images/big1.jpg" alt="" /></a>
+                        <li class="last"> <a href="#"><img src="css/images/big2.jpg" alt="" /></a>
                             <div class="product-info">
                                 <h3>LOREM IPSUM</h3>
                                 <div class="product-desc">

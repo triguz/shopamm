@@ -9,9 +9,9 @@
             <div id="slider-holder">
                 <ul>
                     <li><a href="#"><img src="css/images/slide1.jpg" alt="" /></a></li>
-                    <li><a href="#"><img src="css/images/slide1.jpg" alt="" /></a></li>
-                    <li><a href="#"><img src="css/images/slide1.jpg" alt="" /></a></li>
-                    <li><a href="#"><img src="css/images/slide1.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="css/images/slide2.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="css/images/slide3.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="css/images/slide4.jpg" alt="" /></a></li>
                 </ul>
             </div>
             <div id="slider-nav"> <a href="#" class="active">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> </div>
@@ -26,27 +26,27 @@
                     <div class="product-info">
                         <h3>LOREM IPSUM</h3>
                         <div class="product-desc">
-                            <h4>WOMEN’S</h4>
+                            <h4>STUFF</h4>
                             <p>Lorem ipsum dolor sit<br />
                                 amet</p>
                             <strong class="price">$58.99</strong> </div>
                     </div>
                 </li>
-                <li> <a href="#"><img src="css/images/big1.jpg" alt="" /></a>
+                <li> <a href="#"><img src="css/images/big2.jpg" alt="" /></a>
                     <div class="product-info">
                         <h3>LOREM IPSUM</h3>
                         <div class="product-desc">
-                            <h4>WOMEN’S</h4>
+                            <h4>STUFF</h4>
                             <p>Lorem ipsum dolor sit<br />
                                 amet</p>
                             <strong class="price">$58.99</strong> </div>
                     </div>
                 </li>
-                <li class="last"> <a href="#"><img src="css/images/big1.jpg" alt="" /></a>
+                <li class="last"> <a href="#"><img src="css/images/big3.jpg" alt="" /></a>
                     <div class="product-info">
                         <h3>LOREM IPSUM</h3>
                         <div class="product-desc">
-                            <h4>WOMEN’S</h4>
+                            <h4>STUFF</h4>
                             <p>Lorem ipsum dolor sit<br />
                                 amet</p>
                             <strong class="price">$58.99</strong> </div>
