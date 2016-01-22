@@ -16,9 +16,9 @@ if (!isset($mysqli))
         $username= $_SESSION['username']; 
         
         $arrChartData[] = array();
-$sql = "SELECT * FROM user WHERE username= '$username'";;
+$sql = "SELECT  FROM user WHERE username= '$username'";;
 $res = $mysqli->query($sql) or trigger_error($mysqli->error."[$sql]");
-while($row = $res->fetch_assoc()) {
+while($row = $res->fetch_row()) {
      $email=$row[0];
 $name=$row[1];
 $surname=$row[2];
