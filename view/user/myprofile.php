@@ -21,6 +21,7 @@ while($row = $res->fetch_assoc()) {
     $arrChartData[] = $row;
 }
 $name=$arrChartData[1];
+$surname=$arrChartData[2];
 /*$name=$arrChartData[4];
 $surname=$arrChartData[5];
 $email=$arrChartData[1];
@@ -38,7 +39,7 @@ $state=$arrChartData[10];*/
             <div id="pageContentCenter">
 			<div class="clear"></div>
                         <h2>Il tuo profilo</h2> 
-<ul id="featured_slide_Content">
+<ul id="text">
 <p>Nome: <?php echo $name." ".$surname ?> </p>
 <p>Email: <?php echo $email; ?></p>
 <p>Indirizzo: <?php echo $street." ".$number.", ".$city.", ".$state; ?></p> 
