@@ -34,18 +34,11 @@ $state=$arrChartData[10];*/
         return true;
 ?>
 <div class="main">
-  <div id="featured_slide_">
-        <ul id="content">
-            <div id="pageContentCenter">
-			<div class="clear"></div>
-                        <h2>Il tuo profilo</h2> 
-<div id="text">
-    CIAOOOOOO
-</div>                           
-
-
-                    
+    <ul id="content">
+        <div id="pageContentCenter">
+            <div id="text">
+                  CIAOOOOO
             </div>
-        </ul>
-  </div>
+        </div>
+    </ul>
 </div>
