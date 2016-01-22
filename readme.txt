@@ -1,3 +1,5 @@
+Bonini Alessandro 44671
+
 Link sito: http://spano.sc.unica.it/amm2014/boniniAlessandro/index.php?page=home
 
 Salve professore, spero possa accedere correttamente al sito e al db. Dovrei aver rispettato quasi tutti i requisiti.
