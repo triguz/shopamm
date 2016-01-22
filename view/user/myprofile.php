@@ -40,10 +40,7 @@ $state=$arrChartData[10];*/
 			<div class="clear"></div>
                         <h2>Il tuo profilo</h2> 
 <div id="text">
-
-Nome: <?php echo $name." ".$surname ?>
-<p>Email: <?php echo $email; ?></p>
-<p>Indirizzo: <?php echo $street." ".$number.", ".$city.", ".$state; ?></p> 
+    CIAOOOOOO
 </div>                           
 
 
