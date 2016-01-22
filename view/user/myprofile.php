@@ -19,18 +19,15 @@ if (!isset($mysqli))
 $sql = "SELECT * FROM user WHERE username= '$username'";;
 $res = $mysqli->query($sql) or trigger_error($mysqli->error."[$sql]");
 while($row = $res->fetch_assoc()) {
-    $arrChartData[] = $row;
+     $email=$row[0];
+$name=$row[1];
+$surname=$row[2];
+$street=$row[3];
+$number=$row[4];
+$city=$row[5];
+$state=$row[6];
 }
- while($col= $row->fetch_row())
-{
-$email=$col[0];
-$name=$col[1];
-$surname=$col[2];
-$street=$col[3];
-$number=$col[4];
-$city=$col[5];
-$state=$col[6];
-}
+
 /*$name=$arrChartData[0];
 $surname=$arrChartData[1];
 $name=$arrChartData[4];
