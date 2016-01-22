@@ -1,13 +1,15 @@
 <div class="main">
     <div id="featured_slide_">
-        <ul id="featured_slide_Content">
+        <ul id="content">
             <div id="pageContentCenter">
                 <form action="index.php?action=signup" method="post">
                     <div id="add_err_registration"></div>
                     <div class="clear"></div>
+                    <p></p>
                     <label>Email:</label>
                     <input type="text" id="email" name="email" value="" />
                     <div class="clear"></div>
+                    <p></p>
                     <label>Username:</label>
                     <input type="text" id="r_username" name="username" value="" />
                     <div class="clear"></div>
