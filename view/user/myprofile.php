@@ -26,11 +26,6 @@ while($row = $res->fetch_assoc()) {
     $arrChartData[] = $row;
 }
 $name=$arrChartData[1];
-        
-        
-
-
-$stmt->close();
         $mysqli->close();
         
         return true;
