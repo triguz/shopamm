@@ -22,7 +22,7 @@
         <div class="products">
             <div class="cl">&nbsp;</div>
             <ul>
-                <li> <a href="#"><img src="css/images/big1.jpg" alt="" /></a>
+                <li> <a href="#"><img src="css/images/slide1.jpg" alt="" /></a>
                     <div class="product-info">
                         <h3>LOREM IPSUM</h3>
                         <div class="product-desc">
