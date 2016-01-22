@@ -1,18 +1,17 @@
 <div class="main">
     <div id="featured_slide_">
-        <ul id="content">
+        <ul id="featured_slide_Content">
             <div id="pageContentCenter">
                 <form action="index.php?action=signup" method="post">
                     <div id="add_err_registration"></div>
                     <div class="clear"></div>
                     <ul>
-                        <p></p>
                     <li><label>Email:</label></li> 
                     <li><input type="text" id="email" name="email" value="" /></li>
-                    <p></p>
+                    <div class="clear"></div>
                     <li><label>Username:</label></li>
                     <li><input type="text" id="r_username" name="username" value="" /></li>
-                    <p></p>
+                    <div class="clear"></div>
                     <li><label>Password:</label></li>
                     <li><input type="password" id="r_password" name="password" value="" /></li>
                     <div class="clear"></div>
