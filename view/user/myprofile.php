@@ -1,7 +1,7 @@
 <div class="main">
     <ul id="content">
         <div id="pageContentCenter">
-            <div id="text">
+            
                 <h2>Il tuo profilo</h2>
                 <?php 
 $mysqli = database::getInstance()->databaseConnection();
@@ -31,9 +31,8 @@ $number=$arrChartData[7];
 $city=$arrChartData[8];
 $state=$arrChartData[10];*/
         $mysqli->close();
-        
-        return true;
 ?>
+                <div id="text">
                   CIAOOOOO
             </div>
         </div>
