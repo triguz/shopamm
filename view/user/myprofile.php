@@ -39,12 +39,12 @@ $state=$arrChartData[10];*/
             <div id="pageContentCenter">
 			<div class="clear"></div>
                         <h2>Il tuo profilo</h2> 
-<ul id="text">
+<div id="text">
 
-    <li>Nome: <?php echo $name." ".$surname ?> </li>
+Nome: <?php echo $name." ".$surname ?>
 <p>Email: <?php echo $email; ?></p>
 <p>Indirizzo: <?php echo $street." ".$number.", ".$city.", ".$state; ?></p> 
-</ul>                           
+</div>                           
 
 
                     
