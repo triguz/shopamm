@@ -21,7 +21,7 @@ while($row = $res->fetch_assoc()) {
     $arrChartData[] = $row;
 }
 $name=$arrChartData[1];
-$surname=$arrChartData[2];
+$surname=$arrChartData[1];
 /*$name=$arrChartData[4];
 $surname=$arrChartData[5];
 $email=$arrChartData[1];
@@ -40,7 +40,8 @@ $state=$arrChartData[10];*/
 			<div class="clear"></div>
                         <h2>Il tuo profilo</h2> 
 <ul id="text">
-<p>Nome: <?php echo $name." ".$surname ?> </p>
+
+    <li>Nome: <?php echo $name." ".$surname ?> </li>
 <p>Email: <?php echo $email; ?></p>
 <p>Indirizzo: <?php echo $street." ".$number.", ".$city.", ".$state; ?></p> 
 </ul>                           
