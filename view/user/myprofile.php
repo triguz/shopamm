@@ -18,9 +18,14 @@ if (!isset($mysqli))
         $stmt = $mysqli->stmt_init();
         
         $username= $_SESSION['username']; 
-        $sql = "SELECT * FROM user WHERE username= '$username'";;
-        $arrChartData[] = dbGetAll($sql);
-        $name=$arrChartData[1];
+        
+        $arrChartData[] = array();
+$sql = "SELECT * FROM user WHERE username= '$username'";;
+$res = $mysqli->query($sql) or trigger_error($mysqli->error."[$sql]");
+while($row = $res->fetch_assoc()) {
+    $arrChartData[] = $row;
+}
+$name=$arrChartData[1];
         
         
 
