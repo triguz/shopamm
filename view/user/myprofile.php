@@ -21,33 +21,14 @@ $mysqli = database::getInstance()->databaseConnection();
         $username= $_SESSION['username']; 
         $query = "SELECT email, name, surname, street, number, city, state FROM user WHERE username= '$username'";;
         
-        $stmt->prepare($query);
-        
-        if (!$stmt){ 
-            return false;
-        }
-        
-        if(!$stmt->execute())
-        {
-            $stmt->close();
-            $mysqli->close();
-            return false;
-        }
-        
-        $result = array();
-        $bind = $stmt->bind_result(
-                  
-                $result['email'],
-                $result['name'],
-                $result['username'],
-                $result['street'],
-                $result['number'],
-                $result['city'],
-                $result['state']);
     
-       if (!$bind)
-           return false;
-       while($row = $result->fetch_row())
+        
+         $result= $stmt->query($query);
+if($db->errno >0){
+echo "Errore nell'esecuzione della query $db->errno : $db->error",0;
+}
+else{
+while($row= $result->fetch_row())
 {
 $email=$row[0];
 $name=$row[1];
@@ -56,19 +37,12 @@ $street=$row[3];
 $number=$row[4];
 $city=$row[5];
 $state=$row[6];
-}
-       
-        if (!$stmt->fetch()) 
-        {
-            $stmt->close();
-            $mysqli->close();
-            return false;
-        }
-
-        $stmt->close();
+ $stmt->close();
         $mysqli->close();
         
         return true;
+
+}
 ?>
 <p>Nome: <?php echo $name." ".$surname ?> </p>
 <p>Email: <?php echo $email; ?></p>
