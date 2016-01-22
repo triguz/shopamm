@@ -21,8 +21,8 @@ $res = $mysqli->query($sql) or trigger_error($mysqli->error."[$sql]");
 while($row = $res->fetch_assoc()) {
     $arrChartData[] = $row;
 }
-$name=$arrChartData[name];
-$surname=$arrChartData[email];
+//$name=$arrChartData[];
+$surname=$arrChartData[1];
 /*$name=$arrChartData[4];
 $surname=$arrChartData[5];
 $email=$arrChartData[1];
@@ -33,7 +33,7 @@ $state=$arrChartData[10];*/
         $mysqli->close();
 ?>
                 <div id="text">
-                    <p>Nome: <?php print_r($name, FALSE)?> </p>
+                    <p>Nome: <?php print_r($arrChartData, FALSE)?> </p>
                     <p>Nome: <?php print_r($surname, TRUE)?> </p>
 <p>Email: <?php echo $email; ?> </p>
 <p>Indirizzo: <?php echo $street." ".$number.", ".$city.", ".$state; ?> </p>
