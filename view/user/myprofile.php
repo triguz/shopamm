@@ -33,7 +33,9 @@ $state=$arrChartData[10];*/
         $mysqli->close();
 ?>
                 <div id="text">
-                  CIAOOOOO
+<p>Nome: <?php echo $name." ".$surname ?> </p>
+<p>Email: <?php echo $email; ?> </p>
+<p>Indirizzo: <?php echo $street." ".$number.", ".$city.", ".$state; ?> </p>
             </div>
         </div>
     </ul>
